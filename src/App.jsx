@@ -1,18 +1,24 @@
 import "./App.css";
 import * as React from "react";
+import { useState } from "react";
+import help from "../public/Help.png";
 import Badge from "@mui/material/Badge";
-import { FiPhoneCall } from "react-icons/fi";
+import person from "./assets/person.png";
+import About from "./components/About.jsx";
+import Home from "./components/Home.jsx";
+import { FaLinkedin } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
+import { FiPhoneCall } from "react-icons/fi";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdOutlineLocalPostOffice } from "react-icons/md";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import help from "../public/Help.png";
+import { FiAlignLeft } from "react-icons/fi";
+import { IoCartOutline } from "react-icons/io5";
+import { MdOutlineLocalPostOffice } from "react-icons/md";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import person from "./assets/person.png";
-import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 const data = [
   { id: 1, name: "Fresh organic apricot" },
   { id: 2, name: "Nok" },
@@ -158,12 +164,48 @@ function App() {
           </div>
         </nav>
         <div className="hr"></div>
-        <section id="section-1">
-          <div className="nav-bars">
-             
+        <div className="nav-bars">
+          <div className="nav-ul-li">
+            <div className="gold">
+              <button className="btn-2">
+                <FiAlignLeft className="op" />
+                Select Categories
+              </button>
+              <Router>
+                <nav className="nav-op">
+                  <Link className="Link" to="/">
+                    HOME
+                  </Link>
+                  <Link className="Link" to="/home">
+                    PRODUCT
+                  </Link>
+                  <Link className="Link" to="/about">
+                    STORES
+                  </Link>
+                  <Link className="Link" to="/about">
+                    CONTACT
+                  </Link>
+                </nav>
+                <Routes>
+                  <Route path="/" />
+                  <Route path="/home" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                </Routes>
+              </Router>
+            </div>
+            <div>
+              <button className="card">
+                <IoCartOutline className="oq" />
+                CART 2
+              </button>
+            </div>
           </div>
-        </section>
+        </div>
+        <div className="hr"></div>
       </header>
+      <section id="section-1">
+          
+      </section>
     </>
   );
 }
