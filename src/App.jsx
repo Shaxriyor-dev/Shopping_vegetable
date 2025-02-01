@@ -6,6 +6,7 @@ import Badge from "@mui/material/Badge";
 import person from "./assets/person.png";
 import About from "./components/About.jsx";
 import Home from "./components/Home.jsx";
+import Contend from "./components/Contend.jsx";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
 import { FiPhoneCall } from "react-icons/fi";
@@ -18,7 +19,9 @@ import { IoCartOutline } from "react-icons/io5";
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-
+import noi from "./assets/noi.png";
+import recust from "./assets/recus.png";
+import perol from "./assets/perol.png";
 const data = [
   { id: 1, name: "Fresh organic apricot" },
   { id: 2, name: "Nok" },
@@ -51,7 +54,7 @@ function App() {
   const handleSelect = (item) => {
     setSearch(item.name);
     setFilteredData([]);
-    alert(`Siz ${item.name} ni tanladingiz!`);
+    window.location.href = "https://shopping130.netlify.app";
   };
   return (
     <>
@@ -182,7 +185,7 @@ function App() {
                   <Link className="Link" to="/about">
                     STORES
                   </Link>
-                  <Link className="Link" to="/about">
+                  <Link className="Link" to="/contend">
                     CONTACT
                   </Link>
                 </nav>
@@ -190,6 +193,7 @@ function App() {
                   <Route path="/" />
                   <Route path="/home" element={<Home />} />
                   <Route path="/about" element={<About />} />
+                  <Route path="/contend" element={<Contend />} />
                 </Routes>
               </Router>
             </div>
@@ -204,7 +208,46 @@ function App() {
         <div className="hr"></div>
       </header>
       <section id="section-1">
-          
+        <div className="conteiner">
+          <div className="contmed-img">
+            <img src={noi} alt="" />
+            <div className="imgdis">
+              <p className="foiz">10% OFF</p>
+              <p className="how">Buy More & Save More</p>
+              <p className="snoce">Nuts & Snacks</p>
+            </div>
+            <button className="btn-4">Shop now </button>
+          </div>
+          <div className="contmed-img">
+            <img src={recust} alt="" />
+            <div className="imgdis">
+              <p className="foiz">10% OFF</p>
+              <p className="how">Buy More & Save More</p>
+              <p className="snoce">Nuts & Snacks</p>
+            </div>
+            <button className="btn-4">Shop now </button>
+          </div>
+          <div className="contmed-img">
+            <img src={perol} alt="" />
+            <div className="imgdis">
+              <p className="foiz">10% OFF</p>
+              <p className="how">Buy More & Save More</p>
+              <p className="snoce">Nuts & Snacks</p>
+            </div>
+            <button className="btn-4">Shop now </button>
+          </div>
+        </div>
+        <div className="homes">
+          <div>
+          <p className="fors">For You</p>
+          <p className="tops"> Top Featured Products</p>
+            <div className="swiper">
+              <div className="box-spam">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

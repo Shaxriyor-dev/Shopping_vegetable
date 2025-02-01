@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <section className="section-li">
-          Hello
+         STORES
       </section>
     </div>
   )

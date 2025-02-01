@@ -176,26 +176,95 @@ nav{
     background: #7FAD39;
     font-family: "Lexend Giga", serif;
 }
+#section-1{
+    height: 100vh;
+    margin-top: 1px;
+    background: #F7F7F7;
+}
 .oq{
     font-size: 24px;
 }
 
+.contmed-img{
+    height: 231px;
+    width: 358px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 4px #ffff;
+}
+.imgdis{
+    height: 99px;
+    width: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    align-items: center;
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: -7.9rem;
+    background: #fff;
+}
+
+.foiz{
+    color: #89e104;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Lexend Giga", serif;
+}
 
 
+.how{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.snoce{
+    color: #999999;
+}
 
+.btn-4{
+    position: absolute;
+    height: 50px;
+    width: 125px;
+    background: #7FAD39;
+    color: #fff;
+    margin-left: 12rem;
+    margin-top: 9rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.conteiner{
+    gap: 30px;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+}
 
+.fors{
+    font-size: 14px;
+    color: #7FAD39;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.tops{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+.homes{
+    display: flex;
+    padding: 20px 12rem;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
+.box-spam{
+    width: 226px;
+    height: 335px;
+    background: #fff;
+}
 
 
 
@@ -255,6 +324,13 @@ nav{
     .nav-op{
         display: none;
     }
+    .conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     
 }
@@ -306,9 +382,37 @@ nav{
         gap: 25px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .gold{
         gap: 5px;
+    }
+    .homes{
+        padding: 40px 20px;
+
+    }
+    .contmed-img{
+        height: 196px;
+        width: 300px;
+    }
+    .imgdis{
+        height: 80px;
+        width: 200px;
+        margin-left: -6rem;
+    }
+    .btn-4{
+        width: 100px;
+        height: 40px;
+        margin-left: 10rem;
+        margin-top: 7rem;
+    }
+    .foiz{
+        font-size: 12px;
+    }
+    .how{
+        font-size: 14px;
+    }
+    .snoce{
+        font-size: 10px;
     }
 }

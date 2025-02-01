@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <section className="section-li">
-          Salom
+      PRODUCT
       </section>
     </div>
   );
