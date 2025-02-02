@@ -28,6 +28,19 @@ import Gored from "./assets/gord.png";
 import xors from "./assets/xors.png";
 import verg from "./assets/verg.png";
 import saol from "./assets/saol.png";
+import kplo from "./assets/kplo.png";
+import hords from "./assets/hordsa.png";
+import opaq from "./assets/opaqs.png";
+import apple from "./assets/apple.png";
+import mokd from "./assets/nokd.png";
+import lope from "./assets/lope.png";
+import dilm from "./assets/dilm.png";
+import kopa from "./assets/kopa.png";
+import losh from "./assets/losh.png";
+import payment from "../public/payment.png";
+import { TfiApple } from "react-icons/tfi";
+import { FaGooglePlay } from "react-icons/fa";
+
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
@@ -407,7 +420,7 @@ function App() {
                   </div>
                 </div>
                 <div className="imga">
-                  <img src={same} alt="" />
+                  <img src={apple} alt="" />
                 </div>
                 <p className="text-6">Available(in stock)</p>
                 <p className="text-7">Fresh organic apricot</p>
@@ -548,10 +561,326 @@ function App() {
           <div>
             <p className="fors">Offers</p>
             <p className="tops">Best Values</p>
-            
+            <div className="boxs-flex">
+              <div className="container">
+                <img className="img-o" src={kplo} alt="" />
+                <p className="led">Daily Essentials </p>
+                <p className="texto">20% off Everyday</p>
+                <button className="btn-8">SHOP NOW</button>
+              </div>
+              <div className="container">
+                <img className="img-o" src={hords} alt="" />
+                <p className="led">Daily Essentials </p>
+                <p className="texto">20% off Everyday</p>
+                <button className="btn-8">SHOP NOW</button>
+              </div>
+              <div className="container">
+                <img className="img-o" src={opaq} alt="" />
+                <p className="led">Daily Essentials </p>
+                <p className="texto">20% off Everyday</p>
+                <button className="btn-8">SHOP NOW</button>
+              </div>
+            </div>
+            <div className="herosa">
+              <p className="fors">For You</p>
+              <p className="tops">Top Vegetables & Fruits Products</p>
+              <div className="swiper">
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={apple} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Fresh organic apricot</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={mokd} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Cucumber</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={lope} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Hazelnuts filbert nut</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={dilm} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Fresh organic apricot</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="herosa">
+              <p className="fors">For You</p>
+              <p className="tops"> Added new Products</p>
+              <div className="swiper">
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={kopa} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Fresh organic apricot</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={mokd} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Cucumber</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={lope} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Hazelnuts filbert nut</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="box-spam">
+                  <div className="opis">
+                    <button className="btn-1">15%Off</button>
+                    <div className="like-img">
+                      <img src={vector} alt="" />
+                    </div>
+                  </div>
+                  <div className="imga">
+                    <img src={losh} alt="" />
+                  </div>
+                  <p className="text-6">Available(in stock)</p>
+                  <p className="text-7">Fresh organic apricot</p>
+                  <div className="kalso">
+                    <span className="spam-1">$12</span>
+                    <a className="wert" href="#">
+                      $15
+                    </a>
+                  </div>
+                  <div className="pause">
+                    <div className="diors">
+                      <button onClick={ayrish} className="minus">
+                        <img src={fil} alt="" />
+                      </button>
+                      <span>{cound}</span>
+                      <button onClick={qoshish} className="pilus">
+                        <img src={lopa} alt="" />
+                      </button>
+                    </div>
+                    <div>
+                      <a className="carts" href="#">
+                        <img src={soq} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <footer>
+        <div class="big-footer">
+            
+        </div>
+    </footer>
     </>
   );
 }
