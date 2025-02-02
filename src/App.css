@@ -177,7 +177,7 @@ nav{
     font-family: "Lexend Giga", serif;
 }
 #section-1{
-    height: 100vh;
+    height: 100%;
     margin-top: 1px;
     background: #F7F7F7;
 }
@@ -262,21 +262,127 @@ nav{
 
 .box-spam{
     width: 226px;
-    height: 335px;
+    height: 345px;
     background: #fff;
+}
+
+
+.btn-1{
+    height: 35px;
+    width: 70px;
+    color: #fff;
+    font-size: 16px;
+    background: #7FAD39;
+}
+.like-img{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 23px;
+    background: #89e104;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #D8E6C3;
+}
+.opis{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+.imga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-6{
+    color: #A9A9A9;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-7{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.kalso{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.spam-1{
+    color: #89e104;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wert{
+    color: #90918f;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.minus{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2A2A2A;
+}
+.pilus{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2A2A2A;
+}
+.diors{
+    gap: 10px;
+display: flex;
+align-items: center;
+}
+.pause{
+    display: flex;
+    padding: 27px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.swiper{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.section-2{
+    height: 100vh;
+    background: #F7F7F7;
 }
 
 
 
 
 
+
+
+
+
+
 .section-li{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     z-index: 1000;
-    position: fixed;
-    left: 0;
-    margin-top: 40px;
+    position: absolute;
+    left: 0;    
+    margin-top: 44px;
     background: #fff;
 }
 
@@ -414,5 +520,15 @@ nav{
     }
     .snoce{
         font-size: 10px;
+    }
+    .tops{
+        font-size: 20px;
+    }
+    .swiper{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
     }
 }
